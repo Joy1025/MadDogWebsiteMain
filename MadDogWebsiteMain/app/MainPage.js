@@ -1,9 +1,7 @@
 ﻿(function () {
-    'use strict';
-
-    angular.module('app').controller('Main', main);
-    function main() {
-        var vm = this;
-        vm.Tittle = "CSE485";
-    }
+    var app = angular.module('app', []);
+    var tittleController = function ($scope) {
+        $scope.message = "Capstone Project.";
+    };
+    app.controller("tittleController", tittleController);
 })();
