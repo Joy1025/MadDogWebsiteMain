@@ -80,6 +80,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="README.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
