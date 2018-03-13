@@ -1,16 +1,59 @@
 ﻿<!DOCTYPE html>
-<html ng-app="app" lang="en">
-<head>
-    <script src="app/angular.min.js"></script>
-    <meta charset="utf-8" />
-    <!--Header information DO NOT CHANGE-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mad Dog Rescue</title>
-    <link rel="stylesheet" href="/app/styles.css" />
-    <link rel="icon" type="image/x-icon" href="app/ASULOGO.ico" />
-    <script src="/app/MainPage.js"></script>
-</head>
-<body ng-controller="tittleController">
-    Welcome to {{message}}
+<html ng-app="app">
+
+<title>Mad Dog Rescue</title>
+<script src="/app/MainPage.js"></script>
+<script src="app/angular.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="app/styles.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="app/ASULOGO.ico" />
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="mad-top">
+        <div class="mad-bar mad-white mad-card" id="myNavbar">
+            <img class="mad-image mad-round-small" src="/app/logo_01.jpg" alt="LOGO" width="60" height="20">
+            <!-- Right-sided navbar links -->
+            <div class="mad-right mad-hide-small">
+                <a href="#about" class="mad-bar-item mad-button">ABOUT</a>
+                <a href="#work" class="mad-bar-item mad-button"><i class="fa fa-heart"></i> SUPPORT US</a>
+                <a href="#pricing" class="mad-bar-item mad-button"><i class="fa fa-map-marker"></i> FIND PET</a>
+                <a href="#contact" class="mad-bar-item mad-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="mad-bar-item mad-button mad-right mad-hide-large mad-hide-medium" onclick="mad_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="mad-sidebar mad-bar-block mad-black mad-card mad-animate-left mad-hide-medium mad-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="mad_close()" class="mad-bar-item mad-button mad-large mad-padding-16">Close ×</a>
+        <a href="#about" onclick="mad_close()" class="mad-bar-item mad-button">ABOUT</a>
+        <a href="#team" onclick="mad_close()" class="mad-bar-item mad-button">TEAM</a>
+        <a href="#work" onclick="mad_close()" class="mad-bar-item mad-button">WORK</a>
+        <a href="#pricing" onclick="mad_close()" class="mad-bar-item mad-button">PRICING</a>
+        <a href="#contact" onclick="mad_close()" class="mad-bar-item mad-button">CONTACT</a>
+    </nav>
+
+    <div class="mad-container" style="padding:128px 16px" id="About">
+        <h3 class="mad-center">About Us</h3>
+        <p class="mad-center mad-large">We will add mission statement here...</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mad-center mad-pink mad-padding-64">
+        <a href="#home" class="mad-button mad-light-grey"><i class="fa fa-arrow-up mad-margin-right"></i>To the top</a>
+        <div class="mad-xlarge mad-section">
+            <i class="fa fa-facebook-official mad-hover-opacity"></i>
+            <i class="fa fa-instagram mad-hover-opacity"></i>
+            <i class="fa fa-twitter mad-hover-opacity"></i>
+        </div>
+    </footer>
 </body>
 </html>
