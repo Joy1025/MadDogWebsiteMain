@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="app\aboutus.jpg" />
     <Content Include="app\angular.min.js" />
     <Content Include="app\ASULOGO.ico" />
     <Content Include="app\logo_01.jpg" />
