@@ -1,0 +1,89 @@
+<!DoCTYPE html>
+<html lang="en">
+<head>
+	<title>Lost Pet</title>
+	<link rel="stylesheet" type="text/css" href="lostdog.css">
+</head>
+<body>
+	<ul class="nav">
+		<div class="logo">
+			<a href="#"><img class="logo-image" src=logo.jpg></a>
+		</div>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Find a Pet</a></li>
+		<li><a href="lostdog.html">Report a lost</a></li>
+		<li><a href="#">Donation</a></li>
+		<li><a href="#">Join Us</a></li>
+		<li><a href="#">Log Out</a></li>
+		<p1><br>Mad Dog Rescue</p1>
+		<P2><br>Lets go Make A difference</P2>
+		<p3><br>Info@maddogrescue.net</p3>
+		<p4><br>925-285-8869</p4>
+	</ul>
+	<h1>Lost Pet</h1>
+	<p>Report a lost Pet here:)</p>
+	<form action ="/action_page.php">
+		<div>
+		<label for="pname">Pet Name</label>
+		<input type="text" id="pname" name="petName" placeholder="Type N if unknown">
+		</div>
+		<div>
+		<label for="pdate">Lost Date</label>
+		<input type="date" id="pdate" name="lostDate">
+		</div>
+		<div>
+		<label for="ZipCode">Zip Code</label>
+		<input type="text" pattern="[0-9]{5}" placeholder="Area the pet got lost"title="Five digit zip code" />
+		</div>
+
+		<div>
+		<label for="Age">Age</label>
+		<select name="Age">
+			<option value="NA">Unknown</option>
+			<option value="0">Under 1</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10+">10 or above</option>
+		</select>
+		<label for="Age">years old</label>
+		</div>
+
+				
+		<div>
+		<label for="PetType">Pet Type</label>
+		<select name="Pet Type">
+			<option value="Dog">dogs</option>
+			<option value="Cat">Cats</option>
+			<option value="Rabbit">Rabbits</option>
+			<option value="Horse">Horses</option>
+			<option value="Bird">Birds</option>
+			<option value="Other">Other</option>
+		</select>
+		</div>
+		<div>
+		<label for="Breed">Breed</label>
+		<input type="text" id="breed" name="breed" placeholder="Type N if unknown">
+		</div>
+
+		<div>
+			<input type="radio" id="male" name="Gender"><label for="male">Male</label>
+			<input type="radio" id="female" name="Gender"><label for="female">Female</label>
+			<input type="radio" id="unknown" name="Gender"><label for="unkown">Unknown</label>
+		</div>
+		
+		
+		
+		
+
+		<input type="submit" name="submit">
+	</form>
+</body>
+		
+</html> 
